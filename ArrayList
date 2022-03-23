@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class firstclass {
+
+	public static void main(String[] args) {
+	
+		ArrayList<String> food=new ArrayList<String>();
+		Scanner input =new Scanner(System.in);	
+		System.out.println("Enter yor first food selection:");
+		String inputa =input.nextLine();
+		System.out.println("Enter your Second food selection:");
+		
+		String inputb = input.nextLine();
+		System.out.println("Enter you third food selection:");
+		String inputc = input.nextLine();
+		food.add(0, inputa);
+		food.add(1, inputb);
+		food.add(2, inputc);
+	
+		for(int i=0; i<food.size(); i++)
+		{
+	    System.out.print(food.get(i));
+	}
+	 
+	}
+
+}
+
